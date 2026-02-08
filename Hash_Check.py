@@ -20,5 +20,6 @@ def hash_check():
         end = input("Do u want test another hash ? yes // no : ")
         if end != 'yes':
             break
-
+      
+# Call the function
 hash_check()
