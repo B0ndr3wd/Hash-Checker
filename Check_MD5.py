@@ -2,7 +2,7 @@ import re
 
 def check_MD5(hash):
     '''Check if ur hash is MD5'''
-    x = re.findall(r'[a-fA-F0-9]{32}', hash)
+    x = re.findall(r'^[a-fA-F0-9]{32}$', hash)
     if x:
         return True
     

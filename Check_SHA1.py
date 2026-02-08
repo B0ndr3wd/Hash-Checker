@@ -1,7 +1,7 @@
 import re
 def check_SHA1(hash):
     '''Check if ur hash is SHA1'''
-    x = re.findall(r'[a-fA-F0-9]{40}', hash)
+    x = re.findall(r'^[a-fA-F0-9]{40}$', hash)
     if x:
         return True
     
